@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFRAME</title>
+</head>
+<body>
+<h1>IFRAME</h1>
+<p>
+    "
+    <a href="{{ url_for("html_in_css") }}" target="inline">HTML IN CSS</a>
+    " | "
+    <a href="{{ url_for("html_other_css") }}" target="inline">HTML OTHER CSS</a>
+    " | "
+    <a href="{{ url_for("html_in_js") }}" target="inline">HTML IN CSS</a>
+    " | "
+    <a href="{{ url_for("html_other_js") }}" target="inline">HTML OTHER CSS</a>
+</p>
+
+<iframe src="{{ url_for("html_in_css") }}" width="90%" height="400" name="inline" title="インライン">
+
+</iframe>
+
+
+<a href="{{ url_for("index") }}" target="_parent">PARENT＿INDEX</a>
+|
+<a href="{{ url_for("index") }}" target="_blank">NEWTAB＿INDEX</a>
+
+</body>
+</html>
